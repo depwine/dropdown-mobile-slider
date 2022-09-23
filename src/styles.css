@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  height: 10vh;
+  background-color: slategrey;
+}
+
+main {
+  height: 85vh;
+}
+
+footer {
+  height: 5vh;
+  background-color: slategray;
+}
+
+#drop-down {
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-menu {
+  height: 15vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-slider {
+  height: 60vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(230, 230, 230);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*dropdown*/
+
+.drop-down-button {
+  background: none;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.drop-down-button:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.drop-down-button:active {
+  color: rgb(192, 192, 192);
+}
+
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: slategray;
+  min-width: 100px;
+  z-index: 1;
+
+  display: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(184, 185, 185);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.show {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}

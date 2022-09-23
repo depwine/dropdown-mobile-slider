@@ -1,0 +1,23 @@
+{
+  "name": "dropdown-mobile-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depwine/dropdown-mobile-slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/depwine/dropdown-mobile-slider/issues"
+  },
+  "homepage": "https://github.com/depwine/dropdown-mobile-slider#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1"
+  }
+}

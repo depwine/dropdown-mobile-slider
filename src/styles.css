@@ -138,7 +138,7 @@ a {
   opacity: 0;
 }
 
-.mobile-nav{
+.mobile-nav {
   position: fixed;
   top: 300px;
   left: 100%;
@@ -149,10 +149,9 @@ a {
   background-color: slategray;
   padding-top: 50px;
   transition: 0.4s;
-
 }
 
-.mobile-nav a{
+.mobile-nav a {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -163,11 +162,125 @@ a {
   text-decoration: none;
 }
 
-.mobile-nav a:hover{
+.mobile-nav a:hover {
   background-color: rgb(164, 177, 190);
 }
 
-.mobile-nav.is-active{
+.mobile-nav.is-active {
   left: 0;
 }
 
+/*photo slider*/
+#image-slider .content {
+  border: 1px solid red;
+}
+
+.frame {
+  display: inline-block;
+  border: 1px solid red;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.one {
+  background-color: black;
+  position: relative;
+  left: -220%;
+}
+
+.two {
+  position: relative;
+  top: -106%;
+  left: -110%;
+  background-color: rgb(43, 43, 43);
+}
+
+.three {
+  position: relative;
+  top: -212%;
+  left: 0;
+
+  background-color: rgb(129, 129, 129);
+}
+
+.four {
+  position: relative;
+  top: -318%;
+  left: 110%;
+  background-color: rgb(196, 196, 196);
+}
+
+.five {
+  position: relative;
+  top: -424%;
+  left: 220%;
+  background-color: rgb(240, 240, 240);
+}
+
+.buttons {
+  position: fixed;
+  top: 620px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.left, .right{
+  background-color: red;
+  width: 20px;
+  height: 20px;
+
+}
+
+.but_one,
+.but_two,
+.but_three,
+.but_four,
+.but_five {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+.left:hover,
+.but_one:hover,
+.but_two:hover,
+.but_three:hover,
+.but_four:hover,
+.but_five:hover,
+.right:hover {
+  cursor: pointer;
+  background-color: rgb(131, 131, 131);
+
+}
+
+.but_one:active,
+.but_two:active,
+.but_three:active,
+.but_four:active,
+.but_five:active {
+  background-color: rgb(78, 78, 78);
+}
+
+.left:hover, .right:hover{
+  background-color: rgb(161, 0, 0);
+}
+
+.left:active, .right:active{
+  background-color: rgb(255, 61, 61);
+}

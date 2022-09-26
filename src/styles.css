@@ -171,116 +171,86 @@ a {
 }
 
 /*photo slider*/
-#image-slider .content {
-  border: 1px solid red;
-}
 
-.frame {
-  display: inline-block;
-  border: 1px solid red;
-  height: 100px;
-  width: 100px;
-  position: fixed;
-}
-
-.one,
-.two,
-.three,
-.four,
-.five {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
+.image{
+  height: 300px;
+  width: 300px;
   border: 1px solid black;
-  padding: 0;
-  margin: 0;
 }
 
-.one {
-  background-color: black;
+.carousel{
+  height: 35vh;
+  width: 56.7vw;
   position: relative;
-  left: -220%;
 }
 
-.two {
-  position: relative;
-  top: -106%;
-  left: -110%;
-  background-color: rgb(43, 43, 43);
+.slide{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
 }
 
-.three {
-  position: relative;
-  top: -212%;
-  left: 0;
-
-  background-color: rgb(129, 129, 129);
+.slide > img {
+  display:block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.four {
-  position: relative;
-  top: -318%;
-  left: 110%;
-  background-color: rgb(196, 196, 196);
+ul{
+list-style: none;
 }
 
-.five {
-  position: relative;
-  top: -424%;
-  left: 220%;
-  background-color: rgb(240, 240, 240);
+.slide[data-active]{
+  opacity: 1;
 }
 
-.buttons {
-  position: fixed;
-  top: 620px;
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-}
+.carousel-button{
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 2em;
 
-.left, .right{
-  background-color: red;
-  width: 20px;
-  height: 20px;
-
-}
-
-.but_one,
-.but_two,
-.but_three,
-.but_four,
-.but_five {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: black;
-}
-
-.left:hover,
-.but_one:hover,
-.but_two:hover,
-.but_three:hover,
-.but_four:hover,
-.but_five:hover,
-.right:hover {
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%); 
   cursor: pointer;
-  background-color: rgb(131, 131, 131);
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
 
 }
 
-.but_one:active,
-.but_two:active,
-.but_three:active,
-.but_four:active,
-.but_five:active {
-  background-color: rgb(78, 78, 78);
+.carousel-button.prev{
+  left: 1rem;
 }
 
-.left:hover, .right:hover{
-  background-color: rgb(161, 0, 0);
+.carousel-button.next{
+  right: 1rem;
 }
 
-.left:active, .right:active{
-  background-color: rgb(255, 61, 61);
+.slide > .one{
+  background-color: rgb(69, 62, 100);
+}
+
+.slide > .two{
+  background-color: rgb(95, 95, 95);
+}
+
+.slide > .three{
+  background-color: rgb(153, 153, 153);
+}
+
+.slide > .four{
+  background-color: rgb(226, 226, 226);
+}
+
+.slide > .five{
+  background-color: rgb(255, 255, 255);
 }
